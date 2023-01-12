@@ -9,8 +9,6 @@
 // const divContainer = document.getElementById("container");
 // divContainer.appendChild(firstDiv);
 
-
-
 // 2. loop through process #1 sixteen times to create 16*16 grid
 for (let i=0; i <16*16; i++) {
     // 2.1 create a div with className .myDivs
@@ -46,4 +44,15 @@ for (let i=0; i <16*16; i++) {
              console.log ("outside of grid");
          }
     }
+
+    // 4.1 Add a button to the top of the screen that will send the user a popup asking for the number of squares per side for the new grid. 
+    // 4.1.1 declare button from html
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click", askQuestion);
+    
+    function askQuestion () {
+        prompt ("Enter a number of strokes for each side");
+    }
+    // 4.2 Once entered, the existing grid should be removed and a new grid should be generated in the same total space as before (e.g. 960px wide) so that you’ve got a new sketch pad. 
+
     
