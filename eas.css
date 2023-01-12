@@ -1,0 +1,13 @@
+#p1{
+    color: red;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    /* grid-gap: 1em; */
+}
+
+.mouseoveredDivs {
+    background-color: blue;
+}
