@@ -93,6 +93,7 @@
         let iDivWord = document.createTextNode(i);
     // 2.3 add the text to the div
         iDiv.appendChild(iDivWord);
+        iDivWord.className = "myDivsWords"
     // 2.4 put the Div inside "container" div
         const divContainer = document.getElementById("container");
         divContainer.appendChild(iDiv);
