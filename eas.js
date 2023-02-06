@@ -97,7 +97,7 @@
         const divContainer = document.getElementById("container");
         divContainer.appendChild(iDiv);
     }
-    }
+}
 
     // 6. Reset
     let resetBtn = document.getElementById("resetBtn");
