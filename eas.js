@@ -79,7 +79,6 @@
         numOfColumns = prompt ("How many strokes to fill in the width?");
         numOfRows = prompt("How many strokes to fill in the height?")
         // 5.3 set numOfColumns and numOfRows to CSS root property
-        // setCssValue() <-- doesn't work because of scope
         r.style.setProperty ("--numOfCol", numOfColumns);
         // console.log(rs.getPropertyValue("--numOfCol"));
         r.style.setProperty ("--numOfRow", numOfRows);
@@ -90,10 +89,9 @@
         let iDiv = document.createElement("div");
         iDiv.className = "myDivs";
     // 2.2 add a word in the div
-        let iDivWord = document.createTextNode(i);
+        // let iDivWord = document.createTextNode(i);
     // 2.3 add the text to the div
-        iDiv.appendChild(iDivWord);
-        iDivWord.className = "myDivsWords"
+        // iDiv.appendChild(iDivWord);
     // 2.4 put the Div inside "container" div
         const divContainer = document.getElementById("container");
         divContainer.appendChild(iDiv);
